@@ -420,10 +420,79 @@ button.btn.btn-primary {
 }
 
 
+/*------------------------------------------------------------------Projects-------------------------------------------------------------------*/
 
+.projects-dropdown {
+   position: relative;
+   display: inline-block;
+}
 
+.projects-dropdown .dropdown-toggle {
+   color: var(--text-color);
+   text-decoration: none;
+}
 
+.projects-dropdown .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: var(--second-bg-color);
+   min-width: 160px;
+   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+   padding: 12px 16px;
+   z-index: 1;
+   border-radius: 8px;
+   margin-top: 10px;
+}
 
+.projects-dropdown .dropdown-content a {
+   color: var(--text-color);
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   transition: all .45s ease;
+}
+
+.projects-dropdown .dropdown-content a:hover {
+   background-color: var(--main-color);
+   color: var(--bg-color);
+}
+
+.projects-dropdown:hover .dropdown-content {
+   display: block;
+}
+
+.projects {
+	padding: 80px 0px;
+	background-color: var(--second-bg-color);
+	color: var(--text-color);
+}
+
+.project_content {
+	padding: 35px 30px;
+	border-radius: 8px;
+	background: var(--bg-color);
+	margin:20px 0px;
+	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: all .45s ease;
+}
+
+.project_content:hover {
+	transform: translateY(-8px);
+}
+
+.project_content i {
+	font-size: 30px;
+	margin-bottom: 20px;
+	border: 1px solid var(--main-color);
+	padding: 15px;
+	border-radius: 50px;
+}
+
+.project_content a {
+	color: var(--text-color);
+	text-decoration: none;
+}
 
 /*------------------------------------------------------------------ education-------------------------------------------------------------------*/
 .education{
@@ -456,17 +525,10 @@ button.btn.btn-primary {
 	text-decoration: none;
  }
 
-
-
-
-
-
-
-
 /*------------------------------------------------------------------ contact-------------------------------------------------------------------*/
 
 .contact{
-   background: var(--second-bg-color);
+   background: var(--bg-color);
    padding:80px 0px;
 }
 .contact-text h4{
